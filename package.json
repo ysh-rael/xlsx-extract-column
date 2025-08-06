@@ -1,0 +1,43 @@
+{
+  "name": "xlsx-extract-column",
+  "version": "1.0.0",
+  "description": "Utilitário Node.js para extrair os valores de uma coluna específica de um arquivo .xlsx e retornar como string separada por vírgulas.",
+  "keywords": [
+    "xlsx",
+    "extract-column"
+  ],
+  "homepage": "https://github.com/ysh-rael/xlsx-extract-column#readme",
+  "bugs": {
+    "url": "https://github.com/ysh-rael/xlsx-extract-column/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysh-rael/xlsx-extract-column.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Ysh-rael",
+  "type": "module",
+  "main": "index.js",
+  "bin": "index.js",
+  "engines": {
+    "node": ">=23.7.0"
+  },
+  "scripts": {
+    "test": "node ./test/test.js",
+    "start": "node index.js ./test/test.xlsx \"Nome\" 1",
+    "build": "pkg . --output dist/xlsx-extract-column.exe"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "assets": [],
+    "output": "dist"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
